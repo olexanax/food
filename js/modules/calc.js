@@ -45,8 +45,7 @@ function calc(){
              });
          }
      }
-     console.log(sex, ratio);
- 
+      
      function calcTotal() {
          if (!sex || !height || !weight || !age || !ratio) {
              result.textContent = '____'; 
@@ -120,4 +119,4 @@ function calc(){
      getDynamicInformation('#age');
 }
 
-module.exports = calc;
+export default calc;
