@@ -1,3 +1,6 @@
+require('es6-promise').polyfill();
+import 'nodelist-foreach-polyfill';
+
 import tabs from'./modules/tabs';
 import modal from'./modules/modal';
 import timer from'./modules/timer';
@@ -17,7 +20,7 @@ timer('.timer', '2023-01-11');
 cards();
 calc();
 form('form', modalTimerId);
-slider({
+slider({ 
     conteiner: '.offer__slider',
     slide: '.offer__slide',
     nextArrow: '.offer__slider-next',
@@ -27,5 +30,6 @@ slider({
     wrapper: '.offer__slider-wrapper',
     field:'.offer__slider-inner'
 });
-});
 
+
+});
